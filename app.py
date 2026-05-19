@@ -27,7 +27,7 @@ st.subheader("Live Watchlist")
 rows = []
 
 for ticker in st.session_state.watchlist:
-try:
+    try:
 stock = yf.Ticker(ticker)
 hist = stock.history(period="2d")
 
