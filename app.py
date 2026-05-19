@@ -20,7 +20,7 @@ st.title("📈 Stock Beginner Analyser")
 default_watchlist = ["AAPL", "MSFT", "NVDA", "TSLA", "PLTR", "RKLB", "BTC-USD"]
 
 if "watchlist" not in st.session_state:
-st.session_state.watchlist = default_watchlist
+    st.session_state.watchlist = default_watchlist
 
 st.subheader("Live Watchlist")
 
